@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страница памяти</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #fdfbf7; /* Мягкий кремовый фон */
+            color: #333;
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .header {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+            margin-bottom: 10px;
+            font-weight: 400;
+        }
+
+        .subtitle {
+            font-style: italic;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 500px;
+            text-align: center;
+        }
+
+        .action-card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: block;
+            border: 1px solid #eee;
+        }
+
+        .action-card:active {
+            transform: scale(0.98);
+            background-color: #f9f9f9;
+        }
+
+        .icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .card-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 22px;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .card-desc {
+            font-size: 14px;
+            color: #888;
+            line-height: 1.4;
+        }
+
+        /* Цвета для кнопок */
+        .view-files { border-top: 4px solid #a8b6cc; }
+        .upload-files { border-top: 4px solid #bcaaa4; }
+
+        footer {
+            margin-top: auto;
+            padding: 40px 20px;
+            font-size: 12px;
+            color: #aaa;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Стена памяти</h1>
+    <p class="subtitle">«В наших сердцах ты будешь жить вечно»</p>
+</div>
+
+<div class="container">
+    
+    <a href="https://drive.google.com/drive/folders/1LkCxu2DCLYAvfj6_mieW-wjwOOdZXPpb?usp=sharing" class="action-card view-files" target="_blank">
+        <span class="icon">🖼️</span>
+        <span class="card-title">Посмотреть воспоминания</span>
+        <span class="card-desc">Посмотрите фотографии, видео и истории, которыми поделились друзья и близкие.</span>
+    </a>
+
+    <a href="https://drive.google.com/drive/folders/1YJpRVDSQqL0Sm09bMz_nmO-9gwrrfOqK?usp=sharing" class="action-card upload-files" target="_blank">
+        <span class="icon">✍️</span>
+        <span class="card-title">Поделиться своим</span>
+        <span class="card-desc">Добавьте свои фото, видео или напишите несколько слов. Нам очень важна ваша память.</span>
+    </a>
+
+</div>
+
+<footer>
+    Пожалуйста, относитесь с уважением к памяти.
+</footer>
+
+</body>
+</html>
