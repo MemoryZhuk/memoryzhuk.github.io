@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="uk">
 <head>
@@ -93,6 +92,12 @@
             color: #888;
             line-height: 1.4;
         }
+		
+		.card-notes {
+            font-size: 10px;
+            color: #aaa;
+            line-height: 1.4;
+        }
 
         /* Кольори для кнопок */
         .view-files { border-top: 4px solid #a8b6cc; }
@@ -117,16 +122,19 @@
 
 <div class="container">
     
-    <a href="https://drive.google.com/drive/folders/1LkCxu2DCLYAvfj6_mieW-wjwOOdZXPpb?usp=sharing" class="action-card view-files" target="_blank">
+    <a href="https://drive.google.com/drive/folders/1LkCxu2DCLYAvfj6_mieW-wjwOOdZXPpb?usp=sharing" class="action-card view-files" target="_blank" rel="noopener">
         <span class="icon">🖼️</span>
         <span class="card-title">Переглянути спогади</span>
         <span class="card-desc">Переглянути фото, відео, історії, котрими поділились друзі та близькі.</span>
     </a>
 
-    <a href="https://drive.google.com/drive/folders/1YJpRVDSQqL0Sm09bMz_nmO-9gwrrfOqK?usp=sharing" class="action-card upload-files" target="_blank">
+    <a href="https://drive.google.com/drive/folders/1YJpRVDSQqL0Sm09bMz_nmO-9gwrrfOqK?usp=sharing" class="action-card upload-files" target="_blank" rel="noopener">
         <span class="icon">✍️</span>
         <span class="card-title">Поділитися своїм</span>
         <span class="card-desc">Додайте свої фото, відео або напишіть декілька слів. Нам дуже важлива ваша пам'ять.</span>
+		<small class="card-notes" style="display: block; margin-top: 8px;">
+			Якщо кнопка "+" не з'явилася, увімкніть у налаштуваннях браузера "Версію для ПК".
+		</small>
     </a>
 
 </div>
