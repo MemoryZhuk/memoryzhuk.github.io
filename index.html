@@ -9,7 +9,9 @@
         body {
             margin: 0;
             padding: 0;
-            background-color: #fdfbf7; /* М'який кремовий фон */
+            /* Насичений градієнт: Синій -> Білий (для читабельності) -> Жовтий */
+            background: linear-gradient(180deg, #0057B7 0%, #ffffff 50%, #FFD700 100%);
+            background-attachment: fixed;
             color: #333;
             font-family: 'Roboto', sans-serif;
             display: flex;
@@ -22,55 +24,64 @@
             text-align: center;
             margin-top: 40px;
             padding: 20px;
+            /* Додаємо легку тінь тексту для кращої видимості на синьому фоні */
+            text-shadow: 0 1px 2px rgba(255,255,255,0.8);
         }
 
-        /* Стиль для нового напису */
         .hero-title {
             font-family: 'Playfair Display', serif;
-            font-size: 36px; /* Більший розмір */
+            font-size: 38px;
             font-style: italic;
-            color: #1a1a1a;
+            color: #ffffff; /* Білий колір, щоб виділявся на синьому фоні згори */
             margin-bottom: 5px;
             display: block;
             letter-spacing: 1px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
         }
 
         h1 {
             font-family: 'Playfair Display', serif;
-            font-size: 24px;
+            font-size: 26px;
             margin-top: 0;
             margin-bottom: 10px;
             font-weight: 400;
-            color: #555;
+            color: #f0f0f0; /* Світло-сірий для контрасту */
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
         }
 
         .subtitle {
             font-style: italic;
-            color: #666;
+            color: #eee;
             margin-bottom: 30px;
+            font-weight: 400;
         }
 
         .container {
             width: 90%;
             max-width: 500px;
             text-align: center;
+            z-index: 1;
         }
 
         .action-card {
-            background: white;
+            background: rgba(255, 255, 255, 0.95);
             border-radius: 20px;
             padding: 30px 20px;
             margin-bottom: 20px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
             transition: all 0.3s ease;
             text-decoration: none;
             display: block;
-            border: 1px solid #eee;
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .action-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
         }
 
         .action-card:active {
             transform: scale(0.98);
-            background-color: #f9f9f9;
         }
 
         .icon {
@@ -82,33 +93,34 @@
         .card-title {
             font-family: 'Playfair Display', serif;
             font-size: 22px;
-            color: #2c3e50;
+            color: #1a1a1a;
             margin-bottom: 10px;
             display: block;
         }
 
         .card-desc {
             font-size: 14px;
-            color: #888;
-            line-height: 1.4;
+            color: #444;
+            line-height: 1.5;
         }
 		
 		.card-notes {
-            font-size: 10px;
-            color: #aaa;
+            font-size: 11px;
+            color: #777;
             line-height: 1.4;
         }
 
-        /* Кольори для кнопок */
-        .view-files { border-top: 4px solid #a8b6cc; }
-        .upload-files { border-top: 4px solid #bcaaa4; }
+        /* Більш виразні рамки */
+        .view-files { border-left: 6px solid #0057B7; }
+        .upload-files { border-left: 6px solid #FFD700; }
 
         footer {
             margin-top: auto;
             padding: 40px 20px;
-            font-size: 12px;
-            color: #aaa;
+            font-size: 13px;
+            color: #333; /* Темніший колір для жовтого фону знизу */
             text-align: center;
+            font-weight: 500;
         }
     </style>
 </head>
@@ -132,7 +144,7 @@
         <span class="icon">✍️</span>
         <span class="card-title">Поділитися своїм</span>
         <span class="card-desc">Додайте свої фото, відео або напишіть декілька слів. Нам дуже важлива ваша пам'ять.</span>
-		<small class="card-notes" style="display: block; margin-top: 8px;">
+		<small class="card-notes" style="display: block; margin-top: 10px;">
 			Якщо кнопка "+" не з'явилася, увімкніть у налаштуваннях браузера "Версію для ПК".
 		</small>
     </a>
